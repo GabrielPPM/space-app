@@ -7,7 +7,7 @@ const SearchBarEstilizado = styled.div`
         height: 56px;
         padding: 12px 16px;
         border-radius: 10px;
-        border: 2px solid;
+        border: 2px solid;  
         border-color: #C98CF1;
         background: transparent;
         box-sizing: border-box;

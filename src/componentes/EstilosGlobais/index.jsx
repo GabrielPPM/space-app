@@ -1,10 +1,25 @@
 import { createGlobalStyle } from "styled-components";
+import GandhiSansRegular from './fontes/GandhiSans-Regular.otf'
+import GandhiSansBold from './fontes/GandhiSans-Bold.otf'
 
 const EstilosGlobais = createGlobalStyle`
         /* http://meyerweb.com/eric/tools/css/reset/
     v2.0-modified | 20110126
     License: none (public domain)
     */
+
+    @font-face {
+        font-family: 'GandhiSansRegular';
+        src: local('Gandhi Sans Regular'), local('GandhiSansRegular'), url(${GandhiSansRegular});
+    }
+    @font-face {
+        font-family: 'GandhiSansBold';
+        src: local('Gandhi Sans Bold'), local('GandhiSansBold'), url(${GandhiSansBold});
+    }
+
+    html{
+      font-family: GandhiSansRegular,  
+    }
 
     html, body, div, span, applet, object, iframe,
     h1, h2, h3, h4, h5, h6, p, blockquote, pre,
