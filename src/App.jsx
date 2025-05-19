@@ -27,12 +27,13 @@ const ConteudoDaGaleria = styled.section`
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
+	gap: 40px;
 `;
 
 const AppContainer = styled.div`
 	width: 1440px;
 	margin: 0 auto;
-	max-width: 100%;
+	max-width: 90%;
 `;
 
 function App() {

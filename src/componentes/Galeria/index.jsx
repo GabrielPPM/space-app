@@ -1,9 +1,30 @@
-const 
+import styled from "styled-components";
+import Titulo from "../Titulo/Titulo";
+import Tags from "./Tags";
+import Populares from "./Tags/Populares";
+
+const GaleriaStyled = styled.section`
+	display: flex;
+	flex-direction: column;
+	color: white;
+`;
+
+const SecaoFluida = styled.div`
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+`
 
 const Galeria = () => {
 	return (
 		<>
-			<h2>Navegue pela galeria</h2>
+			<Tags />
+			<GaleriaStyled>
+				<SecaoFluida>
+					<Titulo>Navegue pela galeria</Titulo>
+					<Populares />
+				</SecaoFluida>
+			</GaleriaStyled>
 		</>
 	);
 };
