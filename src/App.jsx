@@ -4,6 +4,8 @@ import Cabecalho from "./componentes/Cabecalho";
 import BarraLateral from "./componentes/BarraLateral";
 import TituloEstilizado from "./componentes/TituloEstilizado";
 import Galeria from "./componentes/Galeria";
+import fotos from "./fotos.json";
+import { useState } from "react";
 
 const FundoGradiente = styled.div`
 	background: linear-gradient(
@@ -37,6 +39,8 @@ const AppContainer = styled.div`
 `;
 
 function App() {
+	const [fotosDaGaleria, setFotosDaGaleria] = useState(fotos);
+
 	return (
 		<FundoGradiente>
 			<EstilosGlobais />
@@ -46,7 +50,7 @@ function App() {
 					<BarraLateral />
 					<ConteudoDaGaleria>
 						<TituloEstilizado />
-						<Galeria />
+						<Galeria fotos={fotosDaGaleria} />
 					</ConteudoDaGaleria>
 				</MainContainer>
 			</AppContainer>
