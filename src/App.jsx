@@ -26,6 +26,7 @@ const MainContainer = styled.main`
 `;
 
 const ConteudoDaGaleria = styled.section`
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
@@ -33,7 +34,7 @@ const ConteudoDaGaleria = styled.section`
 `;
 
 const AppContainer = styled.div`
-	width: 1440px;
+	width: 1740px;
 	margin: 0 auto;
 	max-width: 90%;
 `;

@@ -3,14 +3,13 @@ import SearchBar from "../SearchBar"
 
 const HeaderEstilizado = styled.header`
     display: flex;
-    place-items: center;
     width: 100%;
+    place-items: center;
     justify-content: space-between;
     img{
         max-width: 212px
     }
     SearchBar{
-        place-self: end;
     }
 `
 

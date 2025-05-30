@@ -3,12 +3,14 @@ import styled from "styled-components";
 const StyledDiv = styled.div`
 	display: flex;
 	flex-direction: column;
-	width: 25rem;
+	width: 32rem;
 	height: auto;
 
 	img {
 		border-radius: 1rem 1rem 0rem 0rem;
 		width: 100%;
+		height: 20rem;
+		object-fit: fill;
 	}
 
 	.bottom-card {
@@ -31,6 +33,9 @@ const Imagem = ({ nome, foto }) => {
 				<div className="texto-container">
 					<p>Nome da imagem</p>
 					<p>{foto}</p>
+				</div>
+				<div>
+					
 				</div>
 			</div>
 		</StyledDiv>

@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const SearchBarEstilizado = styled.div`
     display: flex;
+    flex-direction: row-reverse;
     width: 30rem;
     input{
         height: 56px;
@@ -22,7 +23,7 @@ const SearchBarEstilizado = styled.div`
         width: 2rem;
         height: 2rem;
         top: 0.7rem;
-        right: 3rem;
+        right: -27rem;
     }
 `
 

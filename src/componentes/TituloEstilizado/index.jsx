@@ -5,8 +5,9 @@ const StyledSection = styled.section`
     display: flex;
     width: 100%;
     height: 20rem;
-    max-width: 72rem;
     background-image: url(${banner});
+    background-repeat: no-repeat;
+    background-size: 100%;
     align-items: center;
     border-radius: 2rem;
     h1{
