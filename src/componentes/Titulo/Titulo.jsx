@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 const Titulo = styled.h2`
-color: #7B78E6;
-font-size: 32px;
-font-family: GandhiSansRegular;
-text-align: ${props => props.$alinhamento ? props.$alinhamento : 'left '}
-`
+	color: #7b78e6;
+	font-size: 32px;
 
-export default Titulo
+	text-align: ${(props) => (props.$alinhamento ? props.$alinhamento : "left ")};
+`;
+
+export default Titulo;

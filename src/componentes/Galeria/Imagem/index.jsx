@@ -14,11 +14,12 @@ const StyledDiv = styled.div`
 	}
 
 	.bottom-card {
+		display: flex;
 		height: 5rem;
 		width: 100%;
 		border-radius: 0rem 0rem 1rem 1rem;
 		background-color: #001634;
-		align-content: center;
+		align-items: center;
 	}
 	.texto-container {
 		margin: 0 1.5rem;
@@ -28,11 +29,15 @@ const StyledDiv = styled.div`
 const Imagem = ({ nome, foto }) => {
 	return (
 		<StyledDiv>
-			<img src={foto} />
+			<img src={foto.path}  />
 			<div className="bottom-card">
 				<div className="texto-container">
-					<p>Nome da imagem</p>
-					<p>{foto}</p>
+					<p>{nome.titulo}</p>
+					<p>{foto.path}</p>
+				</div>
+				<div>
+					<img src="" alt="" />
+					<img src="" alt="" />
 				</div>
 				<div>
 					

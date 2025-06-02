@@ -55,6 +55,7 @@ const EstilosGlobais = createGlobalStyle`
 
     body {
         line-height: 1;
+        font-family: GandhiSansRegular;
     }
 
     ol, ul {

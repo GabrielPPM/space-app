@@ -5,7 +5,7 @@ const TagContainer = styled.div`
 	display: flex;
 	color: white;
 	font-size: 1.3rem;
-	font-family: GandhiSansRegular;
+
 	gap: 2rem;
 	align-items: center;
 	.background-tag {
